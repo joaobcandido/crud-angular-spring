@@ -2,4 +2,10 @@ table {
   width: 100%;
 }
 
-
+.carregando-spinner {
+  padding: 2rem;
+  background-color: rgb(172, 183, 192);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
