@@ -12,7 +12,7 @@ export class CursosService {
   list (){
     return this.httpcliente.get<Curso[]>(this.API).pipe(
       first(),
-      delay(10000)
+       delay(5000)
     )
 
 
