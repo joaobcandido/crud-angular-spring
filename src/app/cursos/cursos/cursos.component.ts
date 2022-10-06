@@ -15,13 +15,12 @@ export class CursosComponent implements OnInit {
   cursos$:  Observable <Curso[]>;
 
 
-  displayedColumns = ['name', 'categoria'];
+  displayedColumns = ['_id','name', 'categoria'];
   // cursosService: CursosService;
   constructor(
     private cursosService: CursosService,
      public dialog: MatDialog) {
-      //  this.cursos = [];
-      // this.cursosService = new CursosService ();
+
        this.cursos$ = this.cursosService.list().pipe(
         catchError(error =>{
 
